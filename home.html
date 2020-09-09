@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+      <!-- <a class="navbar-brand" href="#"><img src="img/BACS.jpg" alt="logo"></a> -->
+    </div>
+            <ul class="nav navbar-nav navbar-right">
+            <li id="sign-out"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
+        </ul>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+        <img src="img/icon.png" alt="icon"><br><br>
+        <span id="fullname" class="text-info" style="font-size: 20px; color: white;">Dunkwu Alexander</span>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="myprofile.html">My Profile</a></li>
+            <li><a href="#">Transactions</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="col-sm-10 text-left section"> 
+      <div class="container-fluid header">
+      <h3 style="font-weight: bold;">Home</h3>
+      </div>
+      <div class="container-fluid info">
+        <div class="row">
+          <div class="jumbotron bg-success col-sm-4" >
+            <div class="container">
+              <h4>Bacs Credit Plus</h4>
+            </div>
+          </div>
+          <div class="jumbotron bg-info col-sm-4" >
+            <div class="container">
+
+            </div>
+          </div>
+          <div class="jumbotron bg-warning col-sm-4" >
+            <div class="container">
+
+            </div>
+          </div>
+          </div>
+        </div>
+      
+     </div>
+
+  </div>
+</div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+<script>
+// Your web app's Firebase configuration
+var firebaseConfig = {
+apiKey: "AIzaSyB8eYpDZT6cvq9soUgDftQCh7_cbjLxWio",
+authDomain: "loan-app-4c721.firebaseapp.com",
+databaseURL: "https://loan-app-4c721.firebaseio.com",
+projectId: "loan-app-4c721",
+storageBucket: "loan-app-4c721.appspot.com",
+messagingSenderId: "1015388875578",
+appId: "1:1015388875578:web:9739df3ceba0f530cc3e03",
+measurementId: "G-N24KEQK7M5"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+
+const auth = firebase.auth()
+const db = firebase.firestore()
+</script>
+<script src="home.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BACS Finance</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            body{
+            color:rgb(20, 19, 19);
+            background-image: url("https://static3.bigstockphoto.com/4/2/3/large1500/324775498.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+        header{
+            margin: 30px 20px;
+        }
+        .article{
+            color: black;
+            text-align: center;
+            margin: 120px 0px 20px 0px;
+        }
+        button{
+            font-weight: bold;
+        }
+        .flow{
+            float: right;
+        }
+        .footer{
+            margin-top: 20px;
+            font-size: 30px;
+        }
+       #form{
+           position: absolute;
+           background: rgb(221, 212, 212);
+           padding: 14px;
+           width: 500px;
+           margin: 0px auto 0px 400px;
+           display: none;
+       }
+        </style>
+    </head>
+    <body >
+        
+            <header>
+                    <img src="img/BACS.jpg" alt="bacs">
+                   <button class="btn btn-success btn-lg register" style="float: right;">Register &#8594;</button>
+            </header>
+            <div class="container text-center" id="form">
+                <div>
+                    <h1>Register...</h1>
+            <h4>Fill the form below correctly to sign in:</h4>
+            <form id="register" class="form-group">
+                <label for="personalInfo" >Personal Information</label>
+                <input type="text" name="name" class="form-control" placeholder="First Name" required><br>
+
+                <input type="text" name="lastName" class="form-control" placeholder="Last Name" required><br>
+
+                <input type="email" class="form-control" id="email" placeholder="dunkwualex@gmail.com" required><br>
+                
+                <input type="date" class="form-control" placeholder="D.O.B" required><br>
+
+                <input type="password" class="form-control" placeholder="Password" required id="password"><br>
+                
+                <!-- <input type="password" class="form-control" placeholder="Confirm Password" required id="password"><br> -->
+                
+                <input type="submit" id="submit-button" class="btn btn-success">
+            </form>
+            <a href="signin.html">Already have an account? click here</a>
+                </div>
+            
+            </div>
+            
+           
+                   <div class="article">
+                        <h2>Welcome to BACS Finance....</h2><br/>
+                        <h3>Gain access to financial loans in seconds.</h3><br/>
+                        <p>Apply and get your money sent to your accounts in seconds with friendly intrest</p>
+                        <div class="form-group ">
+                        <a href="signin.html"><button class="btn btn-warning btn-lg login" id="login"> Apply for loan   &#8594;</button></a> 
+                        </div>
+                </div>
+                    <div class="footer">
+                        <p> &#169;</p>
+                        <p  style="float: right;">.....adding value.....</p>
+                    </div>
+                    <!-- The core Firebase JS SDK is always required and must be listed first -->
+                    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+                    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+                    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+                    <!-- TODO: Add SDKs for Firebase products that you want to use
+                    https://firebase.google.com/docs/web/setup#available-libraries -->
+                    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+                    <script>
+                    // Your web app's Firebase configuration
+                    var firebaseConfig = {
+                    apiKey: "AIzaSyB8eYpDZT6cvq9soUgDftQCh7_cbjLxWio",
+                    authDomain: "loan-app-4c721.firebaseapp.com",
+                    databaseURL: "https://loan-app-4c721.firebaseio.com",
+                    projectId: "loan-app-4c721",
+                    storageBucket: "loan-app-4c721.appspot.com",
+                    messagingSenderId: "1015388875578",
+                    appId: "1:1015388875578:web:9739df3ceba0f530cc3e03",
+                    measurementId: "G-N24KEQK7M5"
+                    };
+                    // Initialize Firebase
+                    firebase.initializeApp(firebaseConfig);
+                    firebase.analytics();
+
+                    const auth = firebase.auth()
+                    const db = firebase.firestore()
+                    </script>
+                    <script src="auth.js"></script>
+                    <script src="script.js"></script>
+    </body>
+</html>

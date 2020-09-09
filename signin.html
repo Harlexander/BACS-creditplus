@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SIGN IN </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="BACS.css">
+    </head>
+<body>
+    <div class="container">
+
+        <div>
+            <img src="img/icon.png" alt="icon">
+            <h2>Login</h2>
+        </div>
+        <form id="sign-in">
+            <div class="form-group">
+                <label for="username">UserID:</label>
+                <input type="email" class="form-control" id="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" required>
+            </div>
+            <input type="submit" class="btn btn-info">
+        </form><br>
+            <div>
+                <a href="FrontPage.html">If you dont have an account. Click here</a>
+            </div>
+            <footer>
+                <h4>BACS copyright... &#169;</h4>
+            </footer>
+        </div>
+
+    </div>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyB8eYpDZT6cvq9soUgDftQCh7_cbjLxWio",
+            authDomain: "loan-app-4c721.firebaseapp.com",
+            databaseURL: "https://loan-app-4c721.firebaseio.com",
+            projectId: "loan-app-4c721",
+            storageBucket: "loan-app-4c721.appspot.com",
+            messagingSenderId: "1015388875578",
+            appId: "1:1015388875578:web:9739df3ceba0f530cc3e03",
+            measurementId: "G-N24KEQK7M5"
+        };
+        // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+
+        const auth = firebase.auth();
+        </script>
+        <script src="signin.js"></script>
+</body>
+</html>
